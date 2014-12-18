@@ -1,0 +1,60 @@
+@charset "UTF-8";
+/**
+ * Project                            : Pagu
+ * Type                               : Website
+ * CSS preprocessor                   : SASS
+ * CSS architecture                   : SMACSS, MVCSS, OOCSS
+ * CSS authoring frameworks           : Compass, Foundation, Sukiyaki
+ * CSS resets / normalization         : Reset.css, Normalize.css
+ * JS features detection              : Modernizr
+ * Front-end template                 : Pagu (based on Onigiri)
+ * Layouts                            : Responsive Web Design
+ * Design approach                    : Mobile first
+ * Media                              : Desktops, tablets, mobiles
+ * Pixel density                      : 1-2 dppx
+ * Section                            : Main styles
+ * Developers                         : Your name
+ */
+
+// -----------------------------------------------------------------------------
+// CSS AUTHORING FRAMEWORKS
+// Streamlines development by providing a number of utilities and tools
+// to make writing CSS files easier and faster.
+
+@import "imports";                    // Import configuration settings
+
+@import "compass";                    // Core framework
+@import "foundation/components/grid"; // Grid system framework
+
+@import "vendor/sukiyaki";            // Function and mixin library
+// -----------------------------------------------------------------------------
+// CORE
+// Represents the tools and materials required at the ground level of a project.
+// It provides the initial setup for an application.
+
+@import "core/settings";              // Settings
+@import "core/helpers";               // Helpers
+@import "core/normalization";         // CSS Resets and Normailization
+@import "core/base";                  // Base-level styles
+@import "core/utilities";             // Utilities
+@import "core/content";               // Content
+// -----------------------------------------------------------------------------
+// STRUCTURE
+// A project’s UI elements that are too specialized for use across
+// multiple sites.
+
+@import "structure/grid";             // Grid
+@import "structure/layout";           // Layout
+// -----------------------------------------------------------------------------
+// COMPONENTS
+
+@import "components/components";      // Components
+@import "components/widgets";         // Widgets
+// -----------------------------------------------------------------------------
+// PAGES
+
+@import "pages/master";               // Master template
+// -----------------------------------------------------------------------------
+// QUICK STYLES
+
+@import "inbox";                      // Inbox
